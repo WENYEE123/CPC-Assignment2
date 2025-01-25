@@ -107,7 +107,7 @@ void loop() {
   int rainValue = digitalRead(RAIN_SENSOR_PIN); // Assuming a digital output (0 or 1)
 
   // Prepare message
-  String rainStatus = (rainValue == 1) ? "Raining" : "No Rain";
+  String rainStatus = (rainValue == 1) ? "1" : "0";
   sprintf(buffer, "Temperature: %.2f°C, Humidity: %.2f%%, Water Level: %d, Rain Status: %s",
           temperature, humidity, waterLevel, rainStatus.c_str());
 
